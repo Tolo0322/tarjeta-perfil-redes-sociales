@@ -1,0 +1,88 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    min-width: 375px;
+    height: 100vh;
+    background-color: var(--Off-Black);   
+}
+.card {
+    background-color: var(--Dark-Grey);  
+    width: 84%;
+    border-radius: 10px;
+} 
+.card__info {
+    margin: 30px;
+}
+.card-contain__image {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 45px;
+}
+.card__image {
+    width: 100%;
+}
+.card__name {
+    margin-top: 30px;
+    color: var(--White);
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.card__city {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Green);
+}
+.card__profession {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: var(--White)
+}
+.card__buttons{
+    width: 80%;
+    margin-bottom: 6%;
+}
+.card__button {
+    margin: 7px;
+    border-radius: 7px;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--Grey);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--White);
+}
+.card__button:hover {
+    background-color: var(--Green);
+    color: var(--Dark-Grey);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 430px) {
+    .card {
+        width: 361px;
+    }
+}
